@@ -1,0 +1,29 @@
+name: Notify Slack on Discussions Activity
+
+on:
+  discussion:
+    types: [created]
+  discussion_comment:
+    types: [created]
+
+jobs:
+  notify-slack:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send Discussion Creation to Slack
+        if: ${{ github.event_name == 'discussion' }}
+        uses: slackapi/slack-github-action@v1.24.0
+        with:
+          channel-id: ${{ secrets.SLACK_CHANNEL_NAME }}
+          slack-message: "새 GitHub Discussion이 생성되었습니다!\n*제목:* ${{ github.event.discussion.title }}\n*작성자:* ${{ github.event.discussion.user.login }}\n*링크:* ${{ github.event.discussion.html_url }}"
+        env:
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+          
+      - name: Send Comment Creation to Slack
+        if: ${{ github.event_name == 'discussion_comment' }}
+        uses: slackapi/slack-github-action@v1.24.0
+        with:
+          channel-id: ${{ secrets.SLACK_CHANNEL_NAME }}
+          slack-message: "GitHub Discussion에 새 댓글이 작성되었습니다!\n*Discussion:* ${{ github.event.discussion.title }}\n*댓글 작성자:* ${{ github.event.comment.user.login }}\n*링크:* ${{ github.event.comment.html_url }}"
+        env:
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
