@@ -21,7 +21,7 @@ body:
       description: 사용 중인 SDK 버전을 입력해주세요
       placeholder: SOLAPI Node.js SDK v5.4.0 등
     validations:
-      required: true
+      required: false
       
   - type: dropdown
     id: environment
