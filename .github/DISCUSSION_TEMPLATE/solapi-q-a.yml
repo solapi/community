@@ -29,10 +29,8 @@ body:
       label: 운영 환경
       description: 어떤 환경에서 실행 중인가요?
       options:
-        - 개발 환경 (로컬)
-        - 테스트 서버
-        - 프로덕션 서버
-        - AWS/클라우드
+        - 개발 환경 (로컬)        
+        - AWS/클라우드/호스팅 서버 등 상용 웹 서버
         - 기타 (설명란에 자세히 기재해주세요)
     validations:
       required: true
