@@ -54,7 +54,7 @@ body:
     id: code
     attributes:
       label: 코드 예시
-      description: 문제가 발생한 코드를 공유해주세요
+      description: 문제가 발생한 코드를 공유해주세요. 단, 민감 정보는 반드시 제거해야합니다(예) api key, api secret key 등)
       render: javascript
       placeholder: |
         // 예시 코드
