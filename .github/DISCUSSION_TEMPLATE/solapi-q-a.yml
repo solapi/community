@@ -2,8 +2,8 @@ body:
   - type: markdown
     attributes:
       value: |
-        ## SOLAPI SDK Q&A
-        SDK 관련 질문을 작성하기 전에 [SOLAPI 문서](https://developers.solapi.com/)와 이전 토론을 확인해보세요.
+        ## SOLAPI 개발연동 Q&A
+        SDK 혹은 개발연동 관련 질문을 작성하기 전에 [SOLAPI 문서](https://developers.solapi.com/)와 이전 토론을 확인해보세요.
         
   - type: input
     id: sdk-language
