@@ -103,5 +103,5 @@ body:
           required: true
         - label: 이전 토론/이슈에서 유사한 질문이 없는지 확인했습니다
           required: true
-        - label: **[문의 전 읽어야 하는 사항](https://github.com/solapi/community/discussions/7)**을 확인했습니다
+        - label: 문의 전 읽어야 하는 사항(#7)을 확인했습니다
           required: true
