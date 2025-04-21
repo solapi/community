@@ -3,7 +3,7 @@ body:
     attributes:
       value: |
         ## SOLAPI 개발연동 Q&A
-        SDK 혹은 개발연동 관련 질문을 작성하기 전에 [SOLAPI 문서](https://developers.solapi.com/)와 **[문의 전 읽어야 하는 사항](https://github.com/solapi/community/discussions/7)**을 반드시 확인해주세요.
+        SDK 혹은 개발연동 관련 질문을 작성하기 전에 [SOLAPI 문서](https://developers.solapi.com/)와 *[문의 전 읽어야 하는 사항](https://github.com/solapi/community/discussions/7)*을 반드시 확인해주세요.
         
   - type: input
     id: sdk-language
